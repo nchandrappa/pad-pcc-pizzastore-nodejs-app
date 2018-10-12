@@ -1,0 +1,31 @@
+{
+  "name": "pad-pcc-pizzastore-nodejs-app",
+  "version": "0.0.1",
+  "description": "A sample Node.js app using PCC for caching requests",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-pre-gyp": "^0.11.0",
+    "gemfire": "^1.0.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nchandrappa/pad-pcc-pizzastore-nodejs-app.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "PivotalCloudCache"
+  ],
+  "author": "Nikhil Chandrappa",
+  "contributors": [
+    "Nikhil Chandrappa <nchandrappa@pivotal.io>"
+  ],
+  "license": "MIT"
+}

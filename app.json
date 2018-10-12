@@ -1,0 +1,7 @@
+{
+  "name": "Node.js PCC Pizza Store app",
+  "description": "Pizza store app backed by PCC",
+  "repository": "https://github.com/nchandrappa/pad-pcc-pizzastore-nodejs-app.git",
+  "logo": "https://d1fto35gcfffzn.cloudfront.net/images/products/icons/icon-pcc.svg",
+  "keywords": ["node", "express", "pcc"]
+}

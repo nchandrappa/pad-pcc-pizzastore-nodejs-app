@@ -1,0 +1,10 @@
+---
+applications:
+- name: pcc-nodejs-app
+  memory: 512M
+  instances: 1
+  buildpack: nodejs_buildpack
+  command: scripts/start_nodefire.sh
+  timeout: 180
+  services:
+   - nodejs-test-cluster

@@ -46,6 +46,23 @@ function createPizza( pizzaType) {
   return pizza;
 }
 
+app.get('/orders', (request, response) => {
+   var pizzaOrder;
+   if (typeof request.query.email != "undefined") {
+	pizzaOrder = cloudCache.getFromCache(request.query.email);	
+   } else {
+   	response.send("Provide an email address to get order details");
+   }
+
+  if(typeof pizzaOrder != "undefined") {
+	response.json({
+                   customer: request.query.email,
+                   order: pizzaOrder
+        });
+  }
+  response.send("No orders found for " + request.query.email);
+})
+
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))

@@ -107,7 +107,8 @@ cf service-key workshop-pcc devkey
 
 ###### Step 4: Login into to PCC cli (GFSH)
 
-```gfsh> connect --use-http=true --url=http://gemfire-xxxx-xxx-xx-xxxx.system.excelsiorcloud.com/gemfire/v1 --user=cluster_operator_xyz --password=*******
+```
+gfsh> connect --use-http=true --url=http://gemfire-xxxx-xxx-xx-xxxx.system.excelsiorcloud.com/gemfire/v1 --user=cluster_operator_xyz --password=*******
 ```
 
 ###### Step 5: create PCC regions

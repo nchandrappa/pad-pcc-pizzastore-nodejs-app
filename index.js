@@ -38,7 +38,7 @@ function createPizza( pizzaType) {
         }
   } else if (pizzaType.toString().trim() === 'fancy') {
         pizza = {
-           type: 'plain',
+           type: 'fancy',
            toppings: ['cheese','chicken','arugula'],
            sauce: 'pesto'
         }
